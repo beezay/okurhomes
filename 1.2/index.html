@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OkURHomes</title>
+    <link rel="icon" href="img/logo.png" type="image/icon type">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footer.css">
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--  -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js "></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js "></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.js "></script> -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+
+    <!-- <script>
+        $(document).ready(function() {
+            $(".dropdown, .btn-group").hover(function() {
+                var dropdownMenu = $(this).children(".dropdown-menu");
+                if (dropdownMenu.is(":visible")) {
+                    dropdownMenu.parent().toggleClass("open");
+                }
+            });
+        });
+    </script> -->
+</head>
+
+<body>
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand " href="#"><img src="img/logo.png" alt=""></a>
+            <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    About us
+                  </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Business Overview</a>
+                            <a class="dropdown-item" href="#">Services</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Partners
+                  </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Advisors</a>
+                            <a class="dropdown-item" href="#">Team</a>
+                            <a class="dropdown-item" href="#">Investors</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Real Estate
+                  </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Blogs</a>
+                            <a class="dropdown-item" href="#">Forums</a>
+                            <a class="dropdown-item" href="#">NewsRoom</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Careers
+                  </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Careers</a>
+                            <a class="dropdown-item" href="#">Join us</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Contact <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Login
+                  </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Agent Login</a>
+                            <a class="dropdown-item" href="#">Employee Login</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-sm btn-outline-secondary" type="button">Search</button>
+                </form>
+            </div>
+        </nav>
+    </section>
+    <!-- first page content section  -->
+    <section id="front-page">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="user-menu ">
+                                <ul>
+                                    <li>
+                                        <a href=" "><span><img class= "icon-logo rounded-circle" src="img/broker.png " alt=" "></span> Brokers</a></li>
+
+                                    <li>
+                                        <a href=" "> <span><img class= "icon-logo rounded-circle" src="img/buyer.png " alt=" "></span>Buyers</a>
+                                    </li>
+                                    <li>
+                                        <a href=" "> <span><img class= "icon-logo rounded-circle" src="img/seller.png " alt=" "></span>Sellers</a>
+                                    </li>
+                                    <li>
+                                        <a href=" "> <span><img class= "icon-logo rounded-circle" src="img/rental.png " alt=" "></span> Builders</a>
+                                    </li>
+                                    <li>
+                                        <a href=" "> <span><i class="fa fa-bed " aria-hidden="true "></i></span> Rentals</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="slider/desk1.jpg" class="d-block  w-100 img-fluid " alt="...">
+                                        <div class="carousel-caption">
+                                            <!-- <h2>This picture shows Broker</h2> -->
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="slider/bed1.jpg" class="d-block w-100 " alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="slider/sofa1.jpg" class="d-block w-100 " alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="slider/stools1.jpg" class="d-block w-100 " alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="slider/wooden1.jpg" class="d-block w-100 " alt="...">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-md-6">
+                    <iframe width="90%" height="315" src="https://www.youtube.com/embed/J2aHZXnwIio" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <p style="text-align: center; padding: 3% 10% 8%; color: rgb(0, 0, 0);">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis itaque suscipit odio deserunt eius ut. Ipsam porro tenetur unde quam facere distinctio possimus soluta temporibus nam corrupti ipsa dolore iste, quidem aliquam quibusdam dolores
+            obcaecati, corporis sequi quae voluptas, cumque minima consequatur dolor, dicta veniam sed excepturi, impedit debitis quisquam totam nemo aliquam quasi. Veniam, consequatur doloribus nostrum alias fugiat voluptas rerum provident porro nobis
+            consequuntur numquam ipsam amet, dolorum ducimus vitae earum? Debitis ut, officiis hic ea numquam nemo quas modi mollitia.
+
+        </p>
+    </section>
+
+
+    <section id="second-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6">
+                    <h2>About us</h2>
+                    <div class="about-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam earum voluptates nulla deleniti fugit esse, incidunt alias debitis. Optio aspernatur ipsum ab magnam, consequatur voluptatibus.Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Nam earum voluptates nulla deleniti fugit esse, incidunt alias debitis. Optio aspernatur ipsum ab magnam, consequatur voluptatibus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam earum voluptates
+                            nulla deleniti fugit esse, incidunt alias debitis. Optio aspernatur ipsum ab magnam, consequatur voluptatibus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam earum voluptates nulla deleniti fugit esse, incidunt
+                            alias debitis. Optio aspernatur ipsum ab magnam, consequatur voluptatibus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam earum voluptates nulla deleniti fugit esse, incidunt alias debitis. Optio aspernatur ipsum
+                            ab magnam, consequatur voluptatibus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam earum voluptates nulla deleniti fugit esse, incidunt alias debitis. Optio aspernatur ipsum ab magnam, consequatur voluptatibus.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <h2>About us</h2>
+                    <div class="about-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam earum voluptates nulla deleniti fugit esse, incidunt alias debitis. Optio aspernatur ipsum ab magnam, consequatur voluptatibus.Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Nam earum voluptates nulla deleniti fugit esse, incidunt alias debitis. Optio aspernatur ipsum ab magnam, consequatur voluptatibus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam earum voluptates
+                            nulla deleniti fugit esse, incidunt alias debitis. Optio aspernatur ipsum ab magnam, consequatur voluptatibus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam earum voluptates nulla deleniti fugit esse, incidunt
+                            alias debitis. Optio aspernatur ipsum ab magnam, consequatur voluptatibus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam earum voluptates nulla deleniti fugit esse, incidunt alias debitis. Optio aspernatur ipsum
+                            ab magnam, consequatur voluptatibus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam earum voluptates nulla deleniti fugit esse, incidunt alias debitis. Optio aspernatur ipsum ab magnam, consequatur voluptatibus.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="second-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6">
+
+                </div>
+                <div class="col-xl-6">
+                    <h2>About us</h2>
+                    <div class="about-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam earum voluptates nulla deleniti fugit esse, incidunt alias debitis. Optio aspernatur ipsum ab magnam, consequatur voluptatibus.Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Nam earum voluptates nulla deleniti fugit esse, incidunt alias debitis. Optio aspernatur ipsum ab magnam, consequatur voluptatibus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam earum voluptates
+                            nulla deleniti fugit esse, incidunt alias debitis. Optio aspernatur ipsum ab magnam, consequatur voluptatibus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam earum voluptates nulla deleniti fugit esse, incidunt
+                            alias debitis. Optio aspernatur ipsum ab magnam, consequatur voluptatibus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam earum voluptates nulla deleniti fugit esse, incidunt alias debitis. Optio aspernatur ipsum
+                            ab magnam, consequatur voluptatibus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam earum voluptates nulla deleniti fugit esse, incidunt alias debitis. Optio aspernatur ipsum ab magnam, consequatur voluptatibus.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- lower body section  -->
+    <!-- 
+    <section class="colored-section " id="testimonials ">
+
+        <div id="testimonial-carousel " class="carousel slide " data-ride="false ">
+            <div class="carousel-inner ">
+                <div class="carousel-item active ">
+                    <h2 class="testimonial-text ">With OkUR, I saw a passion, the same passion that I sought in my staff 20 years ago. We just connected !</h2>
+                    <img class="testimonial-image " src="images/jack_ma.png " alt="jack_ma ">
+                    <em>Hong Kong, HK</em>
+                </div>
+                <div class="carousel-item ">
+                    <h2 class="testimonial-text active ">With OkUR, I s ago. We just connected !</h2>
+                    <img class="testimonial-image " src="images/jack_ma.png " alt="jack_ma ">
+                    <em>Hong Kong, HK</em>
+                </div>
+                <div class="carousel-item ">
+                    <h2 class="testimonial-text active "> the same passion that I sought in my staff 20 years ago. We just connected !</h2>
+                    <img class="testimonial-image " src="images/jack_ma.png " alt="jack_ma ">
+                    <em>Hong Kong, HK</em>
+                </div>
+            </div>
+            <a class="carousel-control-prev " href="#testimonial-carousel " role="button " data-slide="prev ">
+                <span class="carousel-control-prev-icon "></span>
+            </a>
+            <a class="carousel-control-next " href="#testimonial-carousel " role="button " data-slide="next ">
+                <span class="carousel-control-next-icon "></span>
+            </a>
+        </div>
+
+    </section>
+    <section class="colored-section " id="press ">
+        <img class="press-logo " src="images/TOI.png " alt="TOI-logo ">
+        <img class="press-logo " src="images/DLF.png " alt="DLF-logo ">
+        <img class="press-logo " src="images/godrej.png " alt="godrej-logo ">
+        <img class="press-logo " src="images/Microsoft.png " alt="microsoft-logo ">
+
+    </section> -->
+
+    <!-- testimonials section  -->
+    <section id="testimonials">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="2000">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="slider/desk1.jpg" class="d-block  w-100 img-fluid " alt="...">
+                                <div class="carousel-caption">
+                                    <!-- <h2>This picture shows Broker</h2> -->
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="slider/bed1.jpg" class="d-block w-100 " alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="slider/sofa1.jpg" class="d-block w-100 " alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="slider/stools1.jpg" class="d-block w-100 " alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="slider/wooden1.jpg" class="d-block w-100 " alt="...">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get In Touch -->
+
+    <section id="contact">
+        <div class="container">
+            <h1>Get in Touch</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <form action="" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Enter your Name...">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" placeholder="Your Contact no..">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Enter your email id.. ">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="" rows="4" class="form-control" placeholder="Type your message here..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="col-md-6 contact-info">
+                    <div class="follow">
+                        <b><i class="fa fa-map-marker" aria-hidden="true"></i> Address:</b> <span> Malviya Nagar, South Delhi, India </span>
+                    </div>
+                    <div class="follow">
+                        <b><i class="fa fa-phone" aria-hidden="true"></i>Phone: </b> <span>+91-9773877911</span>
+                    </div>
+                    <div class="follow">
+                        <b><i class="fa fa-envelope" aria-hidden="true"></i>Email:</b> <span> contact@okurhomes.in </span>
+                    </div>
+                    <div class="follow">
+                        <label> <b>Social-sites:</b></label>
+                        <a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous ">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous ">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous ">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="src/jquery.bootstrap-dropdown-hover.js"></script>
+
+    <script>
+        //$('[data-toggle="dropdown"]').bootstrapDropdownHover();
+        $.fn.bootstrapDropdownHover();
+        //$('#dropdownMenu1').bootstrapDropdownHover();
+        //$('.navbar [data-toggle="dropdown"]').bootstrapDropdownHover();
+    </script>
+
+
+
+
+
+    <!-- <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-53376201-2', 'auto');
+        ga('send', 'pageview');
+    </script> -->
+</body>
+<!-- footer beneath the body  -->
+<footer>
+    <div class="footer ">
+        <!-- this div is for the content inside the footer  -->
+        <div class="inner-footer ">
+
+
+            <!-- this div is for different section within footer items  -->
+            <div class="footer-items ">
+                <h1> OkURTECH</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, rerum explicabo officiis sequi placeat sunt autem sed commodi voluptate maiores. Consequuntur officia provident nihil asperiores libero vitae obcaecati consectetur praesentium.
+                </p>
+            </div>
+
+            <div class="footer-items ">
+                <h2> Quick links</h2>
+                <div class="border ">
+                    <!-- listing the menus -->
+                    <ul>
+                        <a href=" ">
+                            <li>Home</li>
+                        </a>
+                        <a href=" ">
+                            <li>About us</li>
+                        </a>
+                        <a href=" ">
+                            <li>Forums</li>
+                        </a>
+                        <a href=" ">
+                            <li>Glossary</li>
+                        </a>
+                        <a href=" ">
+                            <li>Contact us</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-items ">
+                <h2> Partner Site</h2>
+                <div class="border ">
+                    <!-- listing the menus -->
+                    <ul>
+                        <a href=" ">
+                            <li>oOLtage</li>
+                        </a>
+                        <a href=" ">
+                            <li>Okur International</li>
+                        </a>
+                        <a href=" ">
+                            <li>Okur</li>
+                        </a>
+                        <a href=" ">
+                            <li>Lorem</li>
+                        </a>
+                        <a href=" ">
+                            <li>Ipsum</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-items ">
+                <h2> Contact us</h2>
+                <div class="border ">
+                    <!-- listing the menus -->
+                    <ul>
+                        <li><i class="fa fa-map-marker " aria-hidden="true "></i> Malviya Nagar</li>
+                        <li><i class="fa fa-phone " aria-hidden="true "></i> +91- 9773877911</li>
+                        <li><i class="fa fa-envelope " aria-hidden="true "></i> contact@okur.in</li>
+                    </ul>
+                    <div class="social-media ">
+                        <a href=" "><i class="fa fa-facebook-official " aria-hidden="true "></i></a>
+                        <a href=" "><i class="fa fa-twitter " aria-hidden="true "></i></a>
+                        <a href=" "> <i class="fa fa-instagram " aria-hidden="true "></i></a>
+                        <a href=" "><i class="fa fa-google-plus " aria-hidden="true "></i></a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom ">
+            Copyright &copy; All rights reserved. Designed and Developed by OkURTECH Pvt Ltd 2020.
+        </div>
+    </div>
+
+</footer>
+<!-- 
+<footer class="ct-footer">
+    <div class="container">
+        <form name="contentForm" enctype="multipart/form-data" method="post" action="">
+            <div class="ct-footer-pre text-center-lg">
+                <div class="inner">
+                    <span>Join WebCorpCo to receive updates, news & events!</span>
+                </div>
+                <div class="inner">
+                    <div class="form-group">
+                        <input name="formfields[nl_email]" id="nl_email" class="validate[required]" placeholder="Enter your email address" type="text" value=""> <label for="nl_email" class="sr-only">Email Address</label> <button type="submit" class="btn btn-motive">Join</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <ul class="ct-footer-list text-center-sm">
+            <li>
+                <h2 class="ct-footer-list-header">Learn More</h2>
+                <ul>
+                    <li>
+                        <a href="">Company</a>
+                    </li>
+                    <li>
+                        <a href="">Clients</a>
+                    </li>
+                    <li>
+                        <a href="">News</a>
+                    </li>
+                    <li>
+                        <a href="">Careers</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h2 class="ct-footer-list-header">Services</h2>
+                <ul>
+                    <li>
+                        <a href="">Design</a>
+                    </li>
+                    <li>
+                        <a href="">Marketing</a>
+                    </li>
+                    <li>
+                        <a href="">Sales</a>
+                    </li>
+                    <li>
+                        <a href="">Programming</a>
+                    </li>
+                    <li>
+                        <a href="">Support</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h2 class="ct-footer-list-header">The Industry</h2>
+                <ul>
+                    <li>
+                        <a href="">Thought Leadership</a>
+                    </li>
+                    <li>
+                        <a href="">Webinars</a>
+                    </li>
+                    <li>
+                        <a href="">Events</a>
+                    </li>
+                    <li>
+                        <a href="">Sponsorships</a>
+                    </li>
+                    <li>
+                        <a href="">Advisors</a>
+                    </li>
+                    <li>
+                        <a href="">Training Program</a>
+                    </li>
+                    <li>
+                        <a href="">Activities & Campaigns</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h2 class="ct-footer-list-header">Public Relations</h2>
+                <ul>
+                    <li>
+                        <a href="">WebCorpCo Blog</a>
+                    </li>
+                    <li>
+                        <a href="">Hackathons</a>
+                    </li>
+                    <li>
+                        <a href="">Videos</a>
+                    </li>
+                    <li>
+                        <a href="">News Releases</a>
+                    </li>
+                    <li>
+                        <a href="">Newsletters</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h2 class="ct-footer-list-header">About</h2>
+                <ul>
+                    <li>
+                        <a href="">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="">Our Board</a>
+                    </li>
+                    <li>
+                        <a href="">Our Staff</a>
+                    </li>
+                    <li>
+                        <a href="">Contact Us</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="ct-footer-meta text-center-sm">
+            <div class="row">
+                <div class="col-sm-6 col-md-2">
+                    <img alt="logo" src="https://www.solodev.com/assets/footer/logo.png">
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <address>
+              <span>WebCorpCo<br></span>123 Easy Street<br>
+              Orlando, Florida, 32801<br>
+              <span>Phone: <a href="tel:5555555555">(555) 555-8899</a></span>
+            </address>
+                </div>
+                <div class="col-sm-6 col-md-2 ct-u-paddingTop10">
+                    <a href="" target="_blank"><img alt="app store" src="https://www.solodev.com/assets/footer/appstore.png"></a>
+                </div>
+                <div class="col-sm-6 col-md-2 ct-u-paddingTop10">
+                    <a href="" target="_blank"><img alt="google play store" src="https://www.solodev.com/assets/footer/androidstore.png"></a>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <ul class="ct-socials list-unstyled list-inline">
+                        <li>
+                            <a href="" target="_blank"><img alt="facebook" src="https://www.solodev.com/assets/footer/facebook-white.png"></a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank"><img alt="twitter" src="https://www.solodev.com/assets/footer/twitter-white.png"></a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank"><img alt="youtube" src="https://www.solodev.com/assets/footer/youtube-white.png"></a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank"><img alt="instagram" src="https://www.solodev.com/assets/footer/instagram-white.png"></a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank"><img alt="pinterest" src="https://www.solodev.com/assets/footer/pinterest-white.png"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ct-footer-post">
+        <div class="container">
+            <div class="inner-left">
+                <ul>
+                    <li>
+                        <a href="">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="">News</a>
+                    </li>
+                    <li>
+                        <a href="">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="inner-right">
+                <p>Copyright © 2016 WebCorpCo.&nbsp;<a href="">Privacy Policy</a></p>
+                <p><a class="ct-u-motive-color" href="" target="_blank">Web Design</a> by DigitalUs on <a href="" target="_blank">Solodev CMS</a></p>
+            </div>
+        </div>
+    </div>
+</footer> -->
+
+</html>
